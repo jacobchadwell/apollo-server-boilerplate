@@ -2,7 +2,7 @@
   "name": "apollo-server-boilerplate",
   "version": "1.0.0",
   "description": "Boilerplate GraphQL server for developer onboarding",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "start": "npm run develop",
     "develop": "concurrently \"npm run debug\" \"npm run generate:watch\"",
