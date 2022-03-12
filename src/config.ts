@@ -18,12 +18,5 @@ export const createConfig = (): Config => ({
   dataSources: () => ({
     testService: new TestService(process.env.TEST_SERVICE_BASE_URL),
   }),
-  introspection: true,
-  playground: true,
-  formatError: (err) => {
-    if (err.message.startsWith('400')) {
-      return new Error('400: Bad Request. ' + err?.extensions?.response.body);
-    }
-    return err;
-  },
+  introspection: true
 });

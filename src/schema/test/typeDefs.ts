@@ -2,7 +2,7 @@ import { gql } from 'apollo-server';
 
 export const typeDefs = gql`
   extend type Query {
-    test(var1: Int!): TestResponse
+    test(id: Int!): TestResponse
   }
 
   type TestResponse {
