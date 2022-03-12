@@ -1,4 +1,5 @@
-import { gql, makeExecutableSchema } from 'apollo-server';
+import { gql } from 'apollo-server';
+import { makeExecutableSchema } from '@graphql-tools/schema';
 import * as Test from './test';
 
 export const types = gql`
