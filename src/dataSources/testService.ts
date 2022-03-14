@@ -15,4 +15,9 @@ export class TestService extends RESTDataSource<Context> {
   async getTestObject(input: QueryTestArgs): Promise<TestResponse> {
     return { id: 1, name: 'testName' } as TestResponse;
   }
+
+  async getTestObjectViaREST(input: QueryTestArgs): Promise<TestResponse> {
+    var result = await this.get(`test/${input.id}`) as TestResponse;
+    return result;
+  }
 }
